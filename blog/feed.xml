@@ -5,16 +5,55 @@
   <id>http://rspec.info/blog</id>
   <link href="http://rspec.info/blog"/>
   <link href="http://rspec.info/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-09-03T17:00:00-07:00</updated>
+  <updated>2015-01-28T16:00:00-08:00</updated>
   <author>
     <name>The RSpec Core Team</name>
   </author>
+  <entry>
+    <title>New RSpec Website!</title>
+    <link rel="alternate" href="http://rspec.info/blog/2015/01/new-rspec-website/"/>
+    <id>http://rspec.info/blog/2015/01/new-rspec-website/</id>
+    <published>2015-01-28T16:00:00-08:00</published>
+    <updated>2015-01-29T13:51:27-08:00</updated>
+    <author>
+      <name>Myron Marston</name>
+    </author>
+    <content type="html">&lt;p&gt;RSpec's website has been in need of a refresh for a long time. We've
+been working on this new site, off and on, for more than a year, and
+we're glad to finally ship it. We hope that it'll prove much
+more useful to the community than the old site, particularly since it
+now hosts our &lt;a href="/documentation"&gt;documentation&lt;/a&gt; and our &lt;a href="/blog"&gt;blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I'd like to thank all the people who helped make this site happen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://ninefold.com/"&gt;Ninefold&lt;/a&gt;, who sponsored the development of
+the site and are covering its on-going costs.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://pistachiomade.com/"&gt;Katie Chen&lt;/a&gt;, who came up with the logo and
+new design.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://mootpointer.com/"&gt;Andrew Harvey&lt;/a&gt;,
+&lt;a href="https://github.com/sjahandideh"&gt;Shamim Jahandideh&lt;/a&gt;, and
+&lt;a href="http://jonrowe.co.uk/"&gt;Jon Rowe&lt;/a&gt;, who helped develop the site.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://cohitre.com/"&gt;Carlos Rodriguez&lt;/a&gt; and Brandon Renfrow, who helped out with the CSS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While what we have now is a huge improvement, it's still not as polished
+as we would like, and we're hoping folks from the community will chip in
+and help us iteratively improve it. The blog in particular – which I
+helped put together – is badly in need of some CSS improvements, but my
+CSS skills are very poor.&lt;/p&gt;
+
+&lt;p&gt;If you'd like to help us out, head over to the &lt;a href="https://github.com/rspec/rspec.github.io"&gt;GitHub
+repo&lt;/a&gt; and either open an issue
+to suggest improvements or submit a pull request.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>RSpec 3.1 has been released!</title>
     <link rel="alternate" href="http://rspec.info/blog/2014/09/rspec-3-1-has-been-released/"/>
     <id>http://rspec.info/blog/2014/09/rspec-3-1-has-been-released/</id>
     <published>2014-09-03T17:00:00-07:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
+    <updated>2015-01-29T13:24:20-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -531,7 +570,7 @@ settings in the generated &lt;code&gt;rails_helper&lt;/code&gt;. (Aaron Kromer, 
     <link rel="alternate" href="http://rspec.info/blog/2014/06/rspec-team-changes/"/>
     <id>http://rspec.info/blog/2014/06/rspec-team-changes/</id>
     <published>2014-06-12T17:00:00-07:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
+    <updated>2015-01-29T13:24:20-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -560,7 +599,7 @@ We're excited to have Yuji on the team.&lt;/p&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/"/>
     <id>http://rspec.info/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/</id>
     <published>2014-06-01T17:00:00-07:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
+    <updated>2015-01-29T13:24:20-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -769,7 +808,7 @@ options to &lt;code&gt;rails_helper&lt;/code&gt;. (Aaron Kromer)&lt;/li&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/05/notable-changes-in-rspec-3/"/>
     <id>http://rspec.info/blog/2014/05/notable-changes-in-rspec-3/</id>
     <published>2014-05-20T17:00:00-07:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
+    <updated>2015-01-29T13:24:20-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -2058,7 +2097,7 @@ Sam Phippen and Aaron Kromer for proofreading it.&lt;/em&gt;&lt;/p&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/"/>
     <id>http://rspec.info/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/</id>
     <published>2014-05-17T17:00:00-07:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
+    <updated>2015-01-29T13:24:20-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -2539,475 +2578,6 @@ location. (Jon Rowe, Myron Marston)&lt;/li&gt;
 (Tim Watson)&lt;/li&gt;
   &lt;li&gt;Fix incorrect namespacing of anonymous controller routes. (Aaron Kromer)&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>RSpec 2.99 and 3.0 beta2 have been released!</title>
-    <link rel="alternate" href="http://rspec.info/blog/2014/02/rspec-2-99-and-3-0-beta-2-have-been-released/"/>
-    <id>http://rspec.info/blog/2014/02/rspec-2-99-and-3-0-beta-2-have-been-released/</id>
-    <published>2014-02-20T16:00:00-08:00</published>
-    <updated>2015-01-29T00:16:43-08:00</updated>
-    <author>
-      <name>Myron Marston</name>
-    </author>
-    <content type="html">&lt;p&gt;The RSpec team has released 3.0.0.beta2 and 2.99.0.beta2.&lt;/p&gt;
-
-&lt;p&gt;This is a huge release that includes tons of new features.
-I plan to do a full blog post listing and giving examples for
-all the notable new 3.0 features at a later date. For now, I've
-just got the full release notes.&lt;/p&gt;
-
-&lt;p&gt;Thanks to all the contributors who helped make this release happen!&lt;/p&gt;
-
-&lt;p&gt;I also want to thank those of you who have put your projects though
-the upgrade process and have been using 3.0.0.beta1–your feedback
-has been invaluable.&lt;/p&gt;
-
-&lt;p&gt;For more details on the upgrade process, see the &lt;a href="/blog/2013/11/rspec-2-99-and-3-0-betas-have-been-released#the_upgrade_process"&gt;beta1
-annoucement&lt;/a&gt;
-blog post.&lt;/p&gt;
-
-&lt;p&gt;This will be the last 2.99/3.0 beta release. Next up are the release
-candidates!&lt;/p&gt;
-
-&lt;h2 id="release-notes"&gt;Release Notes&lt;/h2&gt;
-
-&lt;h3 id="rspec-core-2990beta2"&gt;rspec-core 2.99.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-core/compare/v2.99.0.beta1...v2.99.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enhancements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add &lt;code&gt;is_expected&lt;/code&gt; for one-liners that read well with the
-&lt;code&gt;expect&lt;/code&gt;-based syntax. &lt;code&gt;is_expected&lt;/code&gt; is simply defined as
-&lt;code&gt;expect(subject)&lt;/code&gt; and can be used in an expression like:
-&lt;code&gt;it { is_expected.to read_well }&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Backport &lt;code&gt;skip&lt;/code&gt; from RSpec 3, which acts like &lt;code&gt;pending&lt;/code&gt; did in RSpec 2
-when not given a block, since the behavior of &lt;code&gt;pending&lt;/code&gt; is changing in
-RSpec 3. (Xavier Shay)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Deprecations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deprecate inexact &lt;code&gt;mock_with&lt;/code&gt; config options. RSpec 3 will only support
-the exact symbols &lt;code&gt;:rspec&lt;/code&gt;, &lt;code&gt;:mocha&lt;/code&gt;, &lt;code&gt;:flexmock&lt;/code&gt;, &lt;code&gt;:rr&lt;/code&gt; or &lt;code&gt;:nothing&lt;/code&gt;
-(or any module that implements the adapter interface). RSpec 2 did
-fuzzy matching but this will not be supported going forward.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;show_failures_in_pending_blocks&lt;/code&gt; config option. To achieve
-the same behavior as the option enabled, you can use a custom
-formatter instead. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Add a deprecation warning for the fact that the behavior of &lt;code&gt;pending&lt;/code&gt;
-is changing in RSpec 3 – rather than skipping the example (as it did
-in 2.x when no block was provided), it will run the example and mark
-it as failed if no exception is raised. Use &lt;code&gt;skip&lt;/code&gt; instead to preserve
-the old behavior. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Deprecate 's', 'n', 'spec' and 'nested' as aliases for documentation
-formatter. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;RSpec::Core::Reporter#abort&lt;/code&gt; in favor of
-&lt;code&gt;RSpec::Core::Reporter#finish&lt;/code&gt;. (Jon Rowe)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fix failure (undefined method &lt;code&gt;path&lt;/code&gt;) in end-of-run summary
-when &lt;code&gt;raise_errors_for_deprecations!&lt;/code&gt; is configured. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix issue were overridding spec ordering from the command line wasn't
-fully recognised interally. (Jon Rowe)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-core-300beta2"&gt;rspec-core 3.0.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-core/compare/v3.0.0.beta1...v3.0.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Breaking Changes for 3.0.0:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make &lt;code&gt;mock_with&lt;/code&gt; option more strict. Strings are no longer supported
-(e.g. &lt;code&gt;mock_with "mocha"&lt;/code&gt;) – use a symbol instead. Also, unrecognized
-values will now result in an error rather than falling back to the
-null mocking adapter. If you want to use the null mocking adapter,
-use &lt;code&gt;mock_with :nothing&lt;/code&gt; (as has been documented for a long time).
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for overriding RSpec's built-in &lt;code&gt;:if&lt;/code&gt; and &lt;code&gt;:unless&lt;/code&gt;
-filters. (Ashish Dixit)&lt;/li&gt;
-  &lt;li&gt;Custom formatters are now required to call
-&lt;code&gt;RSpec::Core::Formatters.register(formatter_class, *notifications)&lt;/code&gt;
-where &lt;code&gt;notifications&lt;/code&gt; is the list of events the formatter wishes to
-be notified about. Notifications are handled by methods matching the
-names on formatters. This allows us to add or remove notifications
-without breaking existing formatters. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Change arguments passed to formatters. Rather than passing multiple
-arguments (which limits are ability to add additional arguments as
-doing so would break existing formatters), we now pass a notification
-value object that exposes the same data via attributes. This will
-allow us to add new bits of data to a notification event without
-breaking existing formattesr. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;:alias&lt;/code&gt; option for
-&lt;code&gt;RSpec.configuration.add_setting&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;RSpec.configuration.requires = [...]&lt;/code&gt;.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;--formatter&lt;/code&gt; CLI option. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;--configure&lt;/code&gt; CLI option. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;RSpec::Core::RakeTask#spec_opts=&lt;/code&gt;.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;An example group level &lt;code&gt;pending&lt;/code&gt; block or &lt;code&gt;:pending&lt;/code&gt; metadata now executes
-the example and cause a failure if it passes, otherwise it will be pending if
-it fails. The old "never run" behaviour is still used for &lt;code&gt;xexample&lt;/code&gt;, &lt;code&gt;xit&lt;/code&gt;,
-and &lt;code&gt;xspecify&lt;/code&gt;, or via a new &lt;code&gt;skip&lt;/code&gt; method or &lt;code&gt;:skip&lt;/code&gt; metadata option.
-(Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;After calling &lt;code&gt;pending&lt;/code&gt; inside an example, the remainder of the example will
-now be run. If it passes a failure is raised, otherwise the example is marked
-pending. The old "never run" behaviour is provided a by a new &lt;code&gt;skip&lt;/code&gt; method.
-(Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Pending blocks inside an example have been removed as a feature with no
-direct replacement. Use &lt;code&gt;skip&lt;/code&gt; or &lt;code&gt;pending&lt;/code&gt; without a block. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Pending statement is no longer allowed in &lt;code&gt;before(:all)&lt;/code&gt; hooks. Use &lt;code&gt;skip&lt;/code&gt;
-instead.  (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Remove &lt;code&gt;show_failures_in_pending_blocks&lt;/code&gt; configuration option. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Remove support for specifying the documentation formatter using
-'s', 'n', 'spec' or 'nested'. (Jon Rowe)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enhancements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add example run time to JSON formatter output. (Karthik Kastury)&lt;/li&gt;
-  &lt;li&gt;Add more suggested settings to the files generated by
-&lt;code&gt;rspec --init&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;config.alias_example_group_to&lt;/code&gt;, which can be used to define a
-new method that defines an example group with the provided metadata.
-(Michi Huber)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;xdescribe&lt;/code&gt; and &lt;code&gt;xcontext&lt;/code&gt; as shortcuts to make an example group
-pending. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;fdescribe&lt;/code&gt; and &lt;code&gt;fcontext&lt;/code&gt; as shortcuts to focus an example group.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Don't autorun specs via &lt;code&gt;#at_exit&lt;/code&gt; by default. &lt;code&gt;require 'rspec/autorun'&lt;/code&gt;
-is only needed when running specs via &lt;code&gt;ruby&lt;/code&gt;, as it always has been.
-Running specs via &lt;code&gt;rake&lt;/code&gt; or &lt;code&gt;rspec&lt;/code&gt; are both unaffected. (Ben Hoskings)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;expose_dsl_globally&lt;/code&gt; config option, defaulting to true. When disabled
-it will remove the monkey patches rspec-core adds to &lt;code&gt;main&lt;/code&gt; and &lt;code&gt;Module&lt;/code&gt;
-(e.g. &lt;code&gt;describe&lt;/code&gt;, &lt;code&gt;shared_examples_for&lt;/code&gt;, etc).  (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Expose RSpec DSL entry point methods (&lt;code&gt;describe&lt;/code&gt;,
-&lt;code&gt;shared_examples_for&lt;/code&gt;, etc) on the &lt;code&gt;RSpec&lt;/code&gt; constant. Intended for use
-when &lt;code&gt;expose_dsl_globally&lt;/code&gt; is set to &lt;code&gt;false&lt;/code&gt;. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;For consistency, expose all example group aliases (including
-&lt;code&gt;context&lt;/code&gt;) on the &lt;code&gt;RSpec&lt;/code&gt; constant. If &lt;code&gt;expose_dsl_globally&lt;/code&gt; is set to
-&lt;code&gt;true&lt;/code&gt;, also expose them on &lt;code&gt;main&lt;/code&gt; and &lt;code&gt;Module&lt;/code&gt;. Historically, only &lt;code&gt;describe&lt;/code&gt;
-was exposed. (Jon Rowe, Michi Huber)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fix failure (undefined method &lt;code&gt;path&lt;/code&gt;) in end-of-run summary
-when &lt;code&gt;raise_errors_for_deprecations!&lt;/code&gt; is configured. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Issue error when attempting to use -i or –I on command line,
-too close to -I to be considered short hand for –init. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Prevent adding formatters to an output target if the same
-formatter has already been added to that output. (Alex Peattie)&lt;/li&gt;
-  &lt;li&gt;Allow a matcher-generated example description to be used when
-the example is pending. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Ensure the configured &lt;code&gt;failure_exit_code&lt;/code&gt; is used by the rake
-task when there is a failure. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Restore behaviour whereby system exclusion filters take priority over working
-directory (was broken in beta1). (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Prevent RSpec mangling file names that have substrings containing &lt;code&gt;line_number&lt;/code&gt;
-or &lt;code&gt;default_path&lt;/code&gt;. (Matijs van Zuijlen)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-expectations-2990beta2"&gt;rspec-expectations 2.99.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-expectations/compare/v2.99.0.beta1...v2.99.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Deprecations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deprecate chaining &lt;code&gt;by&lt;/code&gt;, &lt;code&gt;by_at_least&lt;/code&gt;, &lt;code&gt;by_at_most&lt;/code&gt; or &lt;code&gt;to&lt;/code&gt; off of
-&lt;code&gt;expect { }.not_to change { }&lt;/code&gt;. The docs have always said these are
-not supported for the negative form but now they explicitly raise
-errors in RSpec 3. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Change the semantics of &lt;code&gt;expect { }.not_to change { x }.from(y)&lt;/code&gt;.
-In RSpec 2.x, this expectation would only fail if &lt;code&gt;x&lt;/code&gt; started with
-the value of &lt;code&gt;y&lt;/code&gt; and changed. If it started with a different value
-and changed, it would pass. In RSpec 3, it will pass only if the
-value starts at &lt;code&gt;y&lt;/code&gt; and it does not change. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;matcher == value&lt;/code&gt; as an alias for &lt;code&gt;matcher.matches?(value)&lt;/code&gt;,
-in favor of &lt;code&gt;matcher === value&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;RSpec::Matchers::OperatorMatcher&lt;/code&gt; in favor of
-&lt;code&gt;RSpec::Matchers::BuiltIn::OperatorMatcher&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate auto-integration with Test::Unit and minitest.
-Instead, include &lt;code&gt;RSpec::Matchers&lt;/code&gt; in the appropriate test case
-base class yourself. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate treating &lt;code&gt;#expected&lt;/code&gt; on a DSL-generated custom matcher
-as an array when only 1 argument is passed to the matcher method.
-In RSpec 3 it will be the single value in order to make diffs
-work properly. (Jon Rowe)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-expectations-300beta2"&gt;rspec-expectations 3.0.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-expectations/compare/v3.0.0.beta1...v3.0.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Breaking Changes for 3.0.0:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Remove deprecated support for accessing the &lt;code&gt;RSpec&lt;/code&gt; constant using
-&lt;code&gt;Rspec&lt;/code&gt; or &lt;code&gt;Spec&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove deprecated &lt;code&gt;RSpec::Expectations.differ=&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for deprecated &lt;code&gt;expect(...).should&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Explicitly disallow &lt;code&gt;expect { }.not_to change { }&lt;/code&gt; with &lt;code&gt;by&lt;/code&gt;,
-&lt;code&gt;by_at_least&lt;/code&gt;, &lt;code&gt;by_at_most&lt;/code&gt; or &lt;code&gt;to&lt;/code&gt;. These have never been supported
-but did not raise explicit errors. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Provide &lt;code&gt;===&lt;/code&gt; rather than &lt;code&gt;==&lt;/code&gt; as an alias of &lt;code&gt;matches?&lt;/code&gt; for
-all matchers.  The semantics of &lt;code&gt;===&lt;/code&gt; are closer to an RSpec
-matcher than &lt;code&gt;==&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove deprecated &lt;code&gt;RSpec::Matchers::OperatorMatcher&lt;/code&gt; constant.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Make &lt;code&gt;RSpec::Expectations::ExpectationNotMetError&lt;/code&gt; subclass
-&lt;code&gt;Exception&lt;/code&gt; rather than &lt;code&gt;StandardError&lt;/code&gt; so they can bypass
-a bare &lt;code&gt;rescue&lt;/code&gt; in end-user code (e.g. when an expectation is
-set from within a rspec-mocks stub implementation). (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove Test::Unit and Minitest 4.x integration. (Myron Marston)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enhancements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simplify the failure message of the &lt;code&gt;be&lt;/code&gt; matcher when matching against:
-&lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt; and &lt;code&gt;nil&lt;/code&gt;. (Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Update matcher protocol and custom matcher DSL to better align
-with the newer &lt;code&gt;expect&lt;/code&gt; syntax. If you want your matchers to
-maintain compatibility with multiple versions of RSpec, you can
-alias the new names to the old. (Myron Marston)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code&gt;failure_message_for_should&lt;/code&gt; =&amp;gt; &lt;code&gt;failure_message&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;failure_message_for_should_not&lt;/code&gt; =&amp;gt; &lt;code&gt;failure_message_when_negated&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;match_for_should&lt;/code&gt; =&amp;gt; &lt;code&gt;match&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code&gt;match_for_should_not&lt;/code&gt; =&amp;gt; &lt;code&gt;match_when_negated&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Improve generated descriptions from &lt;code&gt;change&lt;/code&gt; matcher. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add support for compound matcher expressions using &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt;.
-Simply chain them off of any existing matcher to create an expression
-like &lt;code&gt;expect(alphabet).to start_with("a").and end_with("z")&lt;/code&gt;.
-(Eloy Espinaco)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;contain_exactly&lt;/code&gt; as a less ambiguous version of &lt;code&gt;match_array&lt;/code&gt;.
-Note that it expects the expected array to be splatted as
-individual args: &lt;code&gt;expect(array).to contain_exactly(1, 2)&lt;/code&gt; is
-the same as &lt;code&gt;expect(array).to match_array([1, 2])&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Update &lt;code&gt;contain_exactly&lt;/code&gt;/&lt;code&gt;match_array&lt;/code&gt; so that it can match against
-other non-array collections (such as a &lt;code&gt;Set&lt;/code&gt;). (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Update built-in matchers so that they can accept matchers as arguments
-to allow you to compose matchers in arbitrary ways. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;RSpec::Matchers::Composable&lt;/code&gt; mixin that can be used to make
-a custom matcher composable as well. Note that custom matchers
-defined via &lt;code&gt;RSpec::Matchers.define&lt;/code&gt; already have this. (Myron
-Marston)&lt;/li&gt;
-  &lt;li&gt;Define noun-phrase aliases for built-in matchers, which can be
-used when creating composed matcher expressions that read better
-and provide better failure messages. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;RSpec::Machers.alias_matcher&lt;/code&gt; so users can define their own
-matcher aliases. The &lt;code&gt;description&lt;/code&gt; of the matcher will reflect the
-alternate matcher name. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add explicit &lt;code&gt;be_between&lt;/code&gt; matcher. &lt;code&gt;be_between&lt;/code&gt; has worked for a
-long time as a dynamic predicate matcher, but the failure message
-was suboptimal. The new matcher provides a much better failure
-message. (Erik Michaels-Ober)&lt;/li&gt;
-  &lt;li&gt;Enhance the &lt;code&gt;be_between&lt;/code&gt; matcher to allow for &lt;code&gt;inclusive&lt;/code&gt; or &lt;code&gt;exclusive&lt;/code&gt;
-comparison (e.g. inclusive of min/max or exclusive of min/max).
-(Pedro Gimenez)&lt;/li&gt;
-  &lt;li&gt;Make failure message for &lt;code&gt;not_to be #{operator}&lt;/code&gt; less confusing by
-only saying it's confusing when comparison operators are used.
-(Prathamesh Sonpatki)&lt;/li&gt;
-  &lt;li&gt;Improve failure message of &lt;code&gt;eq&lt;/code&gt; matcher when &lt;code&gt;Time&lt;/code&gt; or &lt;code&gt;DateTime&lt;/code&gt;
-objects are used so that the full sub-second precision is included.
-(Thomas Holmes, Jeff Wallace)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;output&lt;/code&gt; matcher for expecting that a block outputs &lt;code&gt;to_stdout&lt;/code&gt;
-or &lt;code&gt;to_stderr&lt;/code&gt;. (Luca Pette, Matthias Günther)&lt;/li&gt;
-  &lt;li&gt;Forward a provided block on to the &lt;code&gt;has_xyz?&lt;/code&gt; method call when
-the &lt;code&gt;have_xyz&lt;/code&gt; matcher is used. (Damian Galarza)&lt;/li&gt;
-  &lt;li&gt;Provide integration with Minitest 5.x. Require
-&lt;code&gt;rspec/expectations/minitest_integration&lt;/code&gt; after loading minitest
-to use rspec-expectations with minitest. (Myron Marston)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fix wrong matcher descriptions with falsey expected value (yujinakayama)&lt;/li&gt;
-  &lt;li&gt;Fix &lt;code&gt;expect { }.not_to change { }.from(x)&lt;/code&gt; so that the matcher only
-passes if the starting value is &lt;code&gt;x&lt;/code&gt;. (Tyler Rick, Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix hash diffing, so that it colorizes properly and doesn't consider trailing
-commas when performing the diff. (Jared Norman)&lt;/li&gt;
-  &lt;li&gt;Fix built-in matchers to fail normally rather than raising
-&lt;code&gt;ArgumentError&lt;/code&gt; when given an object of the wrong type to match
-against, so that they work well in composite matcher expressions like
-&lt;code&gt;expect([1.51, "foo"]).to include(a_string_matching(/foo/), a_value_within(0.1).of(1.5))&lt;/code&gt;.
-(Myron Marston)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Deprecations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Retain support for RSpec 2 matcher protocol (e.g. for matchers
-in 3rd party extension gems like &lt;code&gt;shoulda&lt;/code&gt;), but it will print
-a deprecation warning. (Myron Marston)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-mocks-2990beta2"&gt;rspec-mocks 2.99.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-mocks/compare/v2.99.0.beta1...v2.99.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Deprecations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;RSpec::Mocks::Mock&lt;/code&gt; in favor of &lt;code&gt;RSpec::Mocks::Double&lt;/code&gt;.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate the &lt;code&gt;host&lt;/code&gt; argument of &lt;code&gt;RSpec::Mocks.setup&lt;/code&gt;. Instead
-&lt;code&gt;RSpec::Mocks::ExampleMethods&lt;/code&gt; should be included directly in the scope where
-RSpec's mocking capabilities are used. (Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Deprecate using any of rspec-mocks' features outside the per-test
-lifecycle (e.g. from a &lt;code&gt;before(:all)&lt;/code&gt; hook). (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate re-using a test double in another example. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Deprecate &lt;code&gt;and_return { value }&lt;/code&gt; and &lt;code&gt;and_return&lt;/code&gt; without arguments. (Yuji Nakayama)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-mocks-300beta2"&gt;rspec-mocks 3.0.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-mocks/compare/v3.0.0.beta1...v3.0.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Breaking Changes for 3.0.0:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Rename &lt;code&gt;RSpec::Mocks::Mock&lt;/code&gt; to &lt;code&gt;RSpec::Mocks::Double&lt;/code&gt;. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Change how to integrate rspec-mocks in other test frameworks. You now
-need to include &lt;code&gt;RSpec::Mocks::ExampleMethods&lt;/code&gt; in your test context.
-(Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Prevent RSpec mocks' doubles and partial doubles from being used outside of
-the per-test lifecycle (e.g. from a &lt;code&gt;before(:all)&lt;/code&gt; hook). (Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Remove the &lt;code&gt;host&lt;/code&gt; argument of &lt;code&gt;RSpec::Mocks.setup&lt;/code&gt;. Instead
-&lt;code&gt;RSpec::Mocks::ExampleMethods&lt;/code&gt; should be included directly in the scope where
-RSpec's mocking capabilities are used. (Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Make test doubles raise errors if you attempt to use them after they
-get reset, to help surface issues when you accidentally retain
-references to test doubles and attempt to reuse them in another
-example. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Remove support for &lt;code&gt;and_return { value }&lt;/code&gt; and &lt;code&gt;and_return&lt;/code&gt; without arguments. (Yuji Nakayama)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enhancements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add &lt;code&gt;receive_message_chain&lt;/code&gt; which provides the functionality of the old
-&lt;code&gt;stub_chain&lt;/code&gt; for the new allow/expect syntax. Use it like so: &lt;code&gt;allow(...).to
-receive_message_chain(:foo, :bar, :bazz)&lt;/code&gt;. (Sam Phippen).&lt;/li&gt;
-  &lt;li&gt;Change argument matchers to use &lt;code&gt;===&lt;/code&gt; as their primary matching
-protocol, since their semantics mirror that of a case or rescue statement
-(which uses &lt;code&gt;===&lt;/code&gt; for matching). (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Add &lt;code&gt;RSpec::Mocks.with_temporary_scope&lt;/code&gt;, which allows you to create
-temporary rspec-mocks scopes in arbitrary places (such as a
-&lt;code&gt;before(:all)&lt;/code&gt; hook). (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Support keyword arguments when checking arity with verifying doubles.
-(Xavier Shay)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fix regression in 3.0.0.beta1 that caused &lt;code&gt;double("string_name" =&amp;gt; :value)&lt;/code&gt;
-to stop working. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Fix the way rspec-mocks and rspec-core interact so that if users
-define a &lt;code&gt;let&lt;/code&gt; with the same name as one of the methods
-from &lt;code&gt;RSpec::Mocks::ArgumentMatchers&lt;/code&gt;, the user's &lt;code&gt;let&lt;/code&gt; takes
-precedence. (Michi Huber, Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix verified doubles so that their methods match the visibility
-(public, protected or private) of the interface they verify
-against. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix verified null object doubles so that they do not wrongly
-report that they respond to anything. They only respond to methods
-available on the interface they verify against. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix deprecation warning for use of old &lt;code&gt;:should&lt;/code&gt; syntax w/o explicit
-config so that it no longer is silenced by an extension gem such
-as rspec-rails when it calls &lt;code&gt;config.add_stub_and_should_receive_to&lt;/code&gt;.
-(Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Fix &lt;code&gt;expect&lt;/code&gt; syntax so that it does not wrongly emit a "You're
-overriding a previous implementation for this stub" warning when
-you are not actually doing that. (Myron Marston)&lt;/li&gt;
-  &lt;li&gt;Fix &lt;code&gt;any_instance.unstub&lt;/code&gt; when used on sub classes for whom the super
-class has had &lt;code&gt;any_instance.stub&lt;/code&gt; invoked on. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Fix regression in &lt;code&gt;stub_chain&lt;/code&gt;/&lt;code&gt;receive_message_chain&lt;/code&gt; that caused
-it to raise an &lt;code&gt;ArgumentError&lt;/code&gt; when passing args to the stubbed
-methods. (Sam Phippen)&lt;/li&gt;
-  &lt;li&gt;Correct stub of undefined parent modules all the way down when stubbing a
-nested constant. (Xavier Shay)&lt;/li&gt;
-  &lt;li&gt;Raise &lt;code&gt;VerifyingDoubleNotDefinedError&lt;/code&gt; when a constant is not defined for
-a verifying class double. (Maurício Linhares)&lt;/li&gt;
-  &lt;li&gt;Remove &lt;code&gt;Double#to_str&lt;/code&gt;, which caused confusing &lt;code&gt;raise some_double&lt;/code&gt;
-behavior. (Maurício Linhares)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-rails-2990beta2"&gt;rspec-rails 2.99.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-rails/compare/v2.99.0.beta1...v2.99.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Deprecations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deprecates the &lt;code&gt;--webrat&lt;/code&gt; option to the scaffold and request spec generator (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Deprecates the use of &lt;code&gt;Capybara::DSL&lt;/code&gt; (e.g., &lt;code&gt;visit&lt;/code&gt;) in controller specs.
-It is more appropriate to use capybara in feature specs (&lt;code&gt;spec/features&lt;/code&gt;)
-instead. (Andy Lindeman)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use &lt;code&gt;__send__&lt;/code&gt; rather than &lt;code&gt;send&lt;/code&gt; to prevent naming collisions (Bradley Schaefer)&lt;/li&gt;
-  &lt;li&gt;Supports Rails 4.1. (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Loads ActiveSupport properly to support changes in Rails 4.1. (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Anonymous controllers inherit from &lt;code&gt;ActionController::Base&lt;/code&gt; if &lt;code&gt;ApplicationController&lt;/code&gt;
-is not present. (Jon Rowe)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="rspec-rails-300beta2"&gt;rspec-rails 3.0.0.beta2&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://github.com/rspec/rspec-rails/compare/v3.0.0.beta1...v3.0.0.beta2"&gt;Full Changelog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Breaking Changes for 3.0.0:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Removes the &lt;code&gt;--webrat&lt;/code&gt; option for the request spec generator (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Methods from &lt;code&gt;Capybara::DSL&lt;/code&gt; (e.g., &lt;code&gt;visit&lt;/code&gt;) are no longer available in
-controller specs. It is more appropriate to use capybara in feature specs
-(&lt;code&gt;spec/features&lt;/code&gt;) instead. (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;infer_base_class_for_anonymous_controllers&lt;/code&gt; is
-enabled by default. (Thomas Holmes)&lt;/li&gt;
-  &lt;li&gt;Capybara 2.2.0 or above is required for feature specs. (Andy Lindeman)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enhancements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Improve &lt;code&gt;be_valid&lt;/code&gt; matcher for non-ActiveModel::Errors implementations (Ben Hamill)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use &lt;code&gt;__send__&lt;/code&gt; rather than &lt;code&gt;send&lt;/code&gt; to prevent naming collisions (Bradley Schaefer)&lt;/li&gt;
-  &lt;li&gt;Supports Rails 4.1. (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Routes are drawn correctly for anonymous controllers with abstract
-parents. (Billy Chan)&lt;/li&gt;
-  &lt;li&gt;Loads ActiveSupport properly to support changes in Rails 4.1. (Andy Lindeman)&lt;/li&gt;
-  &lt;li&gt;Anonymous controllers inherit from &lt;code&gt;ActionController::Base&lt;/code&gt; if &lt;code&gt;ApplicationController&lt;/code&gt;
-is not present. (Jon Rowe)&lt;/li&gt;
-  &lt;li&gt;Require &lt;code&gt;rspec/collection_matchers&lt;/code&gt; when &lt;code&gt;rspec/rails&lt;/code&gt; is required. (Yuji Nakayama)&lt;/li&gt;
-&lt;/ul&gt;
-
 </content>
   </entry>
 </feed>
