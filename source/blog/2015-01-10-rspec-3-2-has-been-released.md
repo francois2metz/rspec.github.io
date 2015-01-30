@@ -22,19 +22,285 @@ Thank you to everyone who helped make this release happen!
 
 ### Windows CI
 
+RSpec has always supported Windows, but the fact that all the core
+maintainers develop on POSIX systems has occasionally made that
+difficult. When RSpec 3.1 was released, we unfortunately broke
+a couple things on Windows without knowing about it until some
+users reported the issues (which were later fixed in 3.1.x patch
+releases). We'd like to prevent that from happening again, so
+this time around we've put effort into getting Windows CI builds
+going on [AppVeyor](http://www.appveyor.com/).
+
+We have passing Windows builds, but there's still more to do here.
+If you're an RSpec and Windows user and would like to help us out,
+please get in touch!
+
+### Core: Pending Example Output Includes Failure Details
+
+### Core: Each Example Now Has a Singleton Group
+
+RSpec has a number of metadata-based feautures that, before now,
+would only apply to example groups, not individual examples:
+
+~~~ ruby
+RSpec.configure do |config|
+  # 1. Filtered module inclusion: examples in groups tagged with `:uses_time`
+  #    will have access to the instance methods of `TimeHelpers`
+  config.include TimeHelpers, :uses_time
+
+  # 2. Context hooks: a browser will start before groups tagged
+  #    with `:uses_browser` and shutdown afterwards.
+  config.before(:context, :uses_browser) { Browser.start }
+  config.after( :context, :uses_browser) { Browser.shutdown }
+end
+
+# 3. Shared context auto-inclusion: groups tagged with
+#    `:redis` will have this context included.
+RSpec.shared_context "Uses Redis", :uses_redis do
+  let(:redis) { Redis.connect(ENV['REDIS_URL']) }
+  before { redis.flushdb }
+end
+~~~
+
+In each of these cases, individual examples tagged with the
+appropriate metadata would not have these constructs applied to them,
+which could be easy to forget. That's changing in RSpec 3.2: we now
+treat every example as being implicitly part of a singleton example
+group of just one example, and that allows us to apply these constructs
+to individual examples, and not just groups. If you're familiar with
+Ruby's object model, this may sound familiar -- every object in Ruby
+has a singleton class that holds custom behavior that applies to that
+instance only. This feature was trivially implemented on top of Ruby's
+singleton classes.
+
 ### Core: Performance Improvements
 
 ### Core: New Sandboxing API
 
-### Core: Each Example Now Has a Singleton Group
+### Core: Formatter Output Improvements
+
+* Seed notification at start
+* Pending example output
+* Shared group backtrace
+
+### Core: Shared Example Group Improvements
+
+### Expectations: Chain Shorthand For DSL-Defined Custom Matchers
+
+The custom matcher DSL has a `chain` method that makes it easy to
+add fluent interfaces to your matchers:
+
+~~~ ruby
+RSpec::Matchers.define :be_bigger_than do |min|
+  chain :but_smaller_than do |max|
+    @max = max
+  end
+
+  match do |value|
+    value > min && value < @max
+  end
+end
+
+# usage:
+expect(10).to be_bigger_than(5).but_smaller_than(15)
+~~~
+
+As this example shows, the most common use of `chain` it to accept an
+additional argument that is used in the `match` logic somehow. Tom
+Stuart [suggested and
+implemented](https://github.com/rspec/rspec-expectations/pull/644) an
+improvement that allows you to shorten the matcher definition to:
+
+~~~ ruby
+RSpec::Matchers.define :be_bigger_than do |min|
+  chain :but_smaller_than, :max
+  match do |value|
+    value > min && value < max
+  end
+end
+~~~
+
+The second argument to `chain` -- `:max` -- is used to define a `max`
+attribute that gets set to the argument passed to `but_smaller_than`.
+
+Thanks, Tom Stuart!
+
+### Expectations: Output Matchers Can Handle Subprocesses
+
+RSpec 3.0 shipped with a new `output` matcher that allows you to specify
+expected output to either `stdout` or `stderr`:
+
+~~~ ruby
+expect { print 'foo' }.to output('foo').to_stdout
+expect { warn  'foo' }.to output(/foo/).to_stderr
+~~~
+
+The mechanism used for these matchers -- temporarily replacing `$stdout`
+or `$stderr` with a `StringIO` for the duration of the block -- is pretty simple but does
+not work when you spawn subprocesses that output to one of these
+streams. For example, this fails:
+
+~~~ ruby
+expect { system('echo foo') }.to output("foo\n").to_stdout
+~~~
+
+In RSpec 3.2, you can replace `to_stdout` with
+`to_stdout_from_any_process` and this expectation will work.
+
+~~~ ruby
+expect { system('echo foo') }.to output("foo\n").to_stdout_from_any_process
+~~~
+
+This uses an alternate mechanism, where `$stdout` is temporarily
+reopened to a temp file, that works with subprocesses. Unfortunately,
+it's also much, much slower -- in our
+[benchmark](https://github.com/rspec/rspec-expectations/blob/v3.2.0/benchmarks/output_stringio_vs_tempfile.rb),
+it's 30 times slower! For this reason, you have to opt-in to it using
+`to_std(out|err)_from_any_process` in place of `to_std(out|err)`.
+
+Thanks to Alex Genco for
+[implementing](https://github.com/rspec/rspec-expectations/pull/700) this improvement!
 
 ### Expectations: DSL-Defined Custom Matchers Can Now Receive Blocks
 
-### Expectations: Chain shorthand for DSL-Defined Custom Matchers
+When defining a custom matcher using the DSL, there are situations
+where it would be nice to accept a block:
 
-### Mocks: `any_args` Works as a an Arg Splat
+~~~ ruby
+RSpec::Matchers.define :be_sorted_by do |&blk|
+  match do |array|
+    array.each_cons(2).all? do |a, b|
+      (blk.call(a) <=> blk.call(b)) <= 0
+    end
+  end
+end
+
+# intended usage:
+expect(users).to be_sorted_by(&:email)
+~~~
+
+Unfortunately, Ruby restrictions do not allow us to support this. The
+`define` block is executed using `class_exec`, which ensures it is
+evaluated in the context of a new matcher class, while also allowing us
+to forward arguments from the call site to the `define` block. The block
+passed to `class_exec` is the one to be evaluated (in this case, the
+`define` block) and there is no way to pass two blocks to `class_exec`.
+
+In prior versions of RSpec, the block passed to `be_sorted_by` would be
+silently ignored. In RSpec 3.2, we now issue a warning:
+
+~~~
+WARNING: Your `be_sorted_by` custom matcher receives a block argument (`blk`), but
+due to limitations in ruby, RSpec cannot provide the block. Instead, use the
+`block_arg` method to access the block. Called from path/to/file.rb:line_number.
+~~~
+
+...which tells you an alternate way to accomplish this: the new `block_arg`
+method, available from within a custom matcher:
+
+~~~ ruby
+RSpec::Matchers.define :be_sorted_by do
+  match do |array|
+    array.each_cons(2).all? do |a, b|
+      (block_arg.call(a) <=> block_arg.call(b)) <= 0
+    end
+  end
+end
+~~~
+
+Thanks to Mike Dalton for
+[implementing](https://github.com/rspec/rspec-expectations/pull/645) this improvement.
+
+### Mocks: `any_args` Works as an Arg Splat
+
+RSpec has had an `any_args` matcher for a long time:
+
+~~~ ruby
+expect(test_double).to receive(:message).with(any_args)
+~~~
+
+The `any_args` matcher behaves exactly like it reads: it allows any
+arguments (including none) to match the message expectation. In RSpec
+3.1 and before, `any_args` could only be used as a stand-alone argument
+to `with`. In RSpec 3.2, we treat it as an arg splat, so you can now
+use it anywhere in an argument list:
+
+~~~ ruby
+expect(test_double).to receive(:message).with(1, 2, any_args)
+~~~
+
+This would match calls like `test_double.message(1, 2)` or
+`test_double.message(1, 2, 3, 4)`.
 
 ### Mocks: Mismatched Args Are Now Diffed
+
+A big part of what has made RSpec's failure output so useful is the diff
+that you get for failures from particular matchers. However, message
+expectation failures have never included a diff. For example, consider
+this failing message expectation:
+
+~~~ ruby
+test_double = double
+expect(test_double).to receive(:foo).with(%w[ 1 2 3 4 ].join("\n"))
+test_double.foo(%w[ 1 2 5 4 ].join("\n"))
+~~~
+
+In RSpec 3.1 and before, this failed with:
+
+~~~
+Failure/Error: test_double.foo(%w[ 1 2 5 4 ].join("\n"))
+  Double received :foo with unexpected arguments
+    expected: ("1\n2\n3\n4")
+         got: ("1\n2\n5\n4")
+~~~
+
+RSpec 3.2 now includes diffs in message expectation failures when
+appropriate (generally when multi-line strings are involved or when
+the pretty-print output of the objects are multi-line). In 3.2, this
+fails with:
+
+~~~
+Failure/Error: test_double.foo(%w[ 1 2 5 4 ].join("\n"))
+  Double received :foo with unexpected arguments
+    expected: ("1\n2\n3\n4")
+         got: ("1\n2\n5\n4")
+  Diff:
+  @@ -1,5 +1,5 @@
+   1
+   2
+  -3
+  +5
+   4
+~~~
+
+Thanks to Pete Higgins for [originally suggesting](https://github.com/rspec/rspec-mocks/issues/434)
+this feature, and for [extracting our differ](https://github.com/rspec/rspec-support/pull/36)
+from rspec-expectation to rspec-support, and thanks to Sam Phippen for
+[updating rspec-mocks](https://github.com/rspec/rspec-mocks/pull/751) to use
+the newly available differ.
+
+### Mocks: Verifying Doubles Can Be Named
+
+RSpec's `double` has always supported an optional name, which gets
+used in message expectation failures. In RSpec 3.0, we added some new
+test double types -- `instance_double`, `class_double` and `object_double` --
+and in 3.1, we added `instance_spy`, `class_spy` and `object_spy`...but
+we forgot to support an optional name for these types.  In RSpec 3.2,
+these double types now support an optional name. Just pass a second
+argument (after the interface argument, but before any stubs):
+
+~~~ ruby
+book_1 = instance_double(Book, "The Brothers Karamozov", author: "Fyodor Dostoyevsky")
+book_2 = instance_double(Book, "Lord of the Rings", author: "J.R.R. Tolkien")
+~~~
+
+Thanks to Cezary Baginski for [implementing](https://github.com/rspec/rspec-mocks/pull/826) this.
+
+### Rails: Support Ruby 2.2 with Rails 3.2 and 4.x
+
+### Rails: New Generator for ActionMailer Previews
+
+### Rails: Instance Doubles Support Dynamic Column Methods Defined by ActiveRecord
 
 ## Stats
 
