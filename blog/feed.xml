@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://rspec.info/blog/2015/01/new-rspec-website/"/>
     <id>http://rspec.info/blog/2015/01/new-rspec-website/</id>
     <published>2015-01-28T16:00:00-08:00</published>
-    <updated>2015-01-29T13:51:27-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -53,7 +53,7 @@ to suggest improvements or submit a pull request.&lt;/p&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/09/rspec-3-1-has-been-released/"/>
     <id>http://rspec.info/blog/2014/09/rspec-3-1-has-been-released/</id>
     <published>2014-09-03T17:00:00-07:00</published>
-    <updated>2015-01-29T13:24:20-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -570,7 +570,7 @@ settings in the generated &lt;code&gt;rails_helper&lt;/code&gt;. (Aaron Kromer, 
     <link rel="alternate" href="http://rspec.info/blog/2014/06/rspec-team-changes/"/>
     <id>http://rspec.info/blog/2014/06/rspec-team-changes/</id>
     <published>2014-06-12T17:00:00-07:00</published>
-    <updated>2015-01-29T13:24:20-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -599,7 +599,7 @@ We're excited to have Yuji on the team.&lt;/p&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/"/>
     <id>http://rspec.info/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/</id>
     <published>2014-06-01T17:00:00-07:00</published>
-    <updated>2015-01-29T13:24:20-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -808,7 +808,7 @@ options to &lt;code&gt;rails_helper&lt;/code&gt;. (Aaron Kromer)&lt;/li&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/05/notable-changes-in-rspec-3/"/>
     <id>http://rspec.info/blog/2014/05/notable-changes-in-rspec-3/</id>
     <published>2014-05-20T17:00:00-07:00</published>
-    <updated>2015-01-29T13:24:20-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
@@ -2097,7 +2097,7 @@ Sam Phippen and Aaron Kromer for proofreading it.&lt;/em&gt;&lt;/p&gt;
     <link rel="alternate" href="http://rspec.info/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/"/>
     <id>http://rspec.info/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/</id>
     <published>2014-05-17T17:00:00-07:00</published>
-    <updated>2015-01-29T13:24:20-08:00</updated>
+    <updated>2015-01-29T18:27:22-08:00</updated>
     <author>
       <name>Myron Marston</name>
     </author>
