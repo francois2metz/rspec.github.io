@@ -8,6 +8,22 @@
 
 
   <h3>
+    <a href="/blog/2015/01/new-gem-signing-certificate/">New RSpec Gem signing certificate</a> -- Sam Phippen
+    <small>Jan 30, 2015</small>
+  </h3>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p><strong>TL;DR If you rely on our signing of RSpec releases you'll have to get a new cert from us</strong></p>
+
+<p>For the upcoming release of RSpec 3.2 we've created a new signing certificate
+for the RSpec gems. The reason for this change is that
+<a href="https://github.com/rspec/rspec/blob/6af4995482ade2d49ad361ee003dee29f713ab17/certs/rspec.pem">our old certificate</a>
+expired. Rubygems certificates have a 1 year expiry by default. The new certificate can be found
+<a href="https://github.com/rspec/rspec/blob/858e0c2ac849d941bfd5b3a5c5e04a4f596fe666/certs/rspec.pem">on GitHub</a>
+and has a 10 year expiry, so you can expect it to be used to verify all of the
+RSpec gems for a while. The expiry of our old certificate means there...</p>
+  <hr>
+  <h3>
     <a href="/blog/2015/01/new-rspec-website/">New RSpec Website!</a> -- Myron Marston
     <small>Jan 29, 2015</small>
   </h3>
@@ -202,26 +218,6 @@ the upgrade process.</p>
 <p>I don't have the energy right now to write up a full "What's new in RSpec 3"
 blog post, but we've mostly been making changes according to what
 we <a href="/blog/2013/07/the-plan-for-rspec-3">previously announced for RSpec...</a></p>
-  <hr>
-  <h3>
-    <a href="/blog/2013/07/the-plan-for-rspec-3/">The Plan for RSpec 3</a> -- Myron Marston
-    <small>Jul 15, 2013</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>Update: <a href="http://nilp.hatenablog.com/entry/2013/07/16/131641">There's a Japanese translation of
-this</a> available
-now.</p>
-
-<p>RSpec 2.0 was released in October 2010. In the nearly three years since
-then, we've been able to continually improve RSpec without needing to
-make breaking changes, but we've reached a point where RSpec has a fair
-bit of cruft stemming from the need to retain backwards
-compatibility with older 2.x releases.</p>
-
-<p><a href="/blog/2013/07/rspec-2-14-is-released">RSpec 2.14</a>
-will be the last RSpec 2 feature release. (We may do some
-bug-fix patch releases, though). We're getting started on...</p>
   <hr>
 
     <p><a href="/blog/page/2/">Next page</a></p>
