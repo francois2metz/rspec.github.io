@@ -2,225 +2,100 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]<!--><html class="no-js" lang="en"><!--<![endif]--><head><meta charset="UTF-8" /><title></title><link href="/stylesheets/application.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/pages/blog.css" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" /><link href="/blog/feed.xml" rel="alternate" type="application/atom+xml" /></head><body class="blog"><header><nav><h1><a href="/">RSpec</a></h1><ul><li><a href="/about">About</a></li><li><a href="/documentation">Documentation</a></li><li><a href="/blog">Blog</a></li><li><a href="/upgrading-from-rspec-2">Upgrade</a></li><li><a href="/help">Get Help</a></li><li><a href="/contributing">Contributing</a></li></ul></nav></header><section class='blog_post'>
+<!--[if gt IE 8]<!--><html class="no-js" lang="en"><!--<![endif]--><head><meta charset="UTF-8" /><title></title><link href="/stylesheets/application.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/pages/blog.css" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" /><link href="/blog/feed.xml" rel="alternate" type="application/atom+xml" /></head><body class="blog"><header><nav><h1><a href="/">RSpec</a></h1><ul><li><a href="/about">About</a></li><li><a href="/documentation">Documentation</a></li><li><a href="/blog">Blog</a></li><li><a href="/upgrading-from-rspec-2">Upgrade</a></li><li><a href="/help">Get Help</a></li><li><a href="/contributing">Contributing</a></li></ul></nav></header><section class='blog_index'>
   <h2>Blog</h2>
-  <p>Page 1 of 2</p>
 
-
-  <h3>
-    <a href="/blog/2015/01/new-gem-signing-certificate/">New RSpec Gem signing certificate</a> -- Sam Phippen
-    <small>Jan 30, 2015</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p><strong>TL;DR If you rely on our signing of RSpec releases you'll have to get a new cert from us</strong></p>
-
-<p>For the upcoming release of RSpec 3.2 we've created a new signing certificate
-for the RSpec gems. The reason for this change is that
-<a href="https://github.com/rspec/rspec/blob/6af4995482ade2d49ad361ee003dee29f713ab17/certs/rspec.pem">our old certificate</a>
-expired. Rubygems certificates have a 1 year expiry by default. The new certificate can be found
-<a href="https://github.com/rspec/rspec/blob/858e0c2ac849d941bfd5b3a5c5e04a4f596fe666/certs/rspec.pem">on GitHub</a>
-and has a 10 year expiry, so you can expect it to be used to verify all of the
-RSpec gems for a while. The expiry of our old certificate means there...</p>
-  <hr>
-  <h3>
-    <a href="/blog/2015/01/new-rspec-website/">New RSpec Website!</a> -- Myron Marston
-    <small>Jan 29, 2015</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>RSpec's website has been in need of a refresh for a long time. We've
-been working on this new site, off and on, for more than a year, and
-we're glad to finally ship it. We hope that it'll prove much
-more useful to the community than the old site, particularly since it
-now hosts our <a href="/documentation">documentation</a> and our <a href="/blog">blog</a>.</p>
-
-<p>I'd like to thank all the people who helped make this site happen:</p>
-
-<ul>
-  <li>
-<a href="https://ninefold.com/">Ninefold</a>, who sponsored the development of
-the site and are covering its on-going costs.</li>
-  <li>
-<a href="http://pistachiomade.com/">Katie Chen</a>, who came up...</li>
-</ul>
-  <hr>
-  <h3>
-    <a href="/blog/2014/09/rspec-3-1-has-been-released/">RSpec 3.1 has been released!</a> -- Myron Marston
-    <small>Sep  4, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>RSpec 3.1 has just been released! Given our commitment to
-<a href="http://semver.org/">semantic versioning</a>, this should be a trivial
-upgrade for anyone already using RSpec 3.0, but if we did introduce
-any regressions, please let us know, and we'll get a patch release
-out with a fix ASAP.</p>
-
-<p>RSpec continues to be a community-driven project with contributors
-from all over the world. This release includes 647 commits from 190
-pull requests from 47 different contributors.</p>
-
-<p>Thank you to everyone who helped make this release happen...</p>
-  <hr>
-  <h3>
-    <a href="/blog/2014/06/rspec-team-changes/">RSpec Team Changes</a> -- Myron Marston
-    <small>Jun 13, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p><a href="http://www.andylindeman.com/">Andy Lindeman</a>, who has been working on RSpec
-with me for a couple years, has decided to retire from the RSpec core team.
-In his current job at GitHub, he's using Ruby and Rails much less than
-he used to. It has been really great to have the chance to work with Andy
-over the last few years. I can't thank him enough. His work on
-rspec-rails in particular (since he's been lead maintainer) has been
-awesome. We wish him well in his future endeavors.</p>
-
-<p>Meanwhile, <a href="http://aaronkromer.com/">Aaron Kromer</a>, who joined the team
-a few...</p>
-  <hr>
-  <h3>
-    <a href="/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/">RSpec 2.99.0 and 3.0.0 have been released!</a> -- Myron Marston
-    <small>Jun  2, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>RSpec 2.99.0 and 3.0.0 have been released! RSpec 3 has tons of <a href="/blog/2014/05/notable-changes-in-rspec-3">great new
-features</a>. RSpec 2.99 is
-part of the <a href="https://relishapp.com/rspec/docs/upgrade">recommended upgrade path</a>
-for projects currently on RSpec 2.x.</p>
-
-<p>RSpec 3 is the work of many, many people, and it never would have happened without
-the community contributing to it. Special thanks to:</p>
-
-<ul>
-  <li>The RSpec core team: Aaron Kromer, Andy Lindeman, Bradley Schaefer, Jon Rowe, Sam Phippen and Xavier Shay.
-It's fantastic to work with all of you.</li>
-  <li>Yuji Nakayama, for creating <a href="http://yujinakayama.me/transpec/">transpec</a>
-</li>
-</ul>
-  <hr>
-  <h3>
-    <a href="/blog/2014/05/notable-changes-in-rspec-3/">Notable Changes in RSpec 3</a> -- Myron Marston
-    <small>May 21, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>Update: there's a <a href="http://nilp.hatenablog.com/entry/2014/05/28/003335">Japanese
-translation</a> of this
-available now.</p>
-
-<p>RSpec 3.0.0 RC1 was <a href="/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released">released a couple days
-ago</a>,
-and 3.0.0 final is just around the corner.  We've been using the betas for the
-last 6 months and we're excited to share them with you. Here's whats new:</p>
-
-<h2 id="across-all-gems">Across all gems</h2>
-
-<h3 id="removed-support-for-ruby-186-and-191">Removed support for Ruby 1.8.6 and 1.9.1</h3>
-
-<p>These versions of Ruby were end-of-lifed long ago and
-RSpec 3 does not support them.</p>
-
-<h3 id="improved-ruby-2x-support">Improved Ruby 2.x support</h3>
-
-<p>Recent releases of RSpec 2.x (i.e. those that came out after...</p>
-  <hr>
-  <h3>
-    <a href="/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/">RSpec 2.99 and 3.0 RC1 have been released!</a> -- Myron Marston
-    <small>May 18, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>The RSpec team has released 3.0.0.rc1 and 2.99.0.rc1! Barring
-a new major issue being reported, this will be the last prerelease,
-and we'll release 2.99.0 and 3.0.0 final in 2 weeks.</p>
-
-<p>If you're upgrading a project from 2.x, check out the <a href="https://relishapp.com/rspec/docs/upgrade">upgrade
-instructions</a>.</p>
-
-<p>If you're curious about what's new in RSpec 3, check back
-in a few days – I'll be posting full list of notable changes
-in RSpec 3 soon.</p>
-
-<p>Thanks to all the contributors who helped make this release happen!</p>
-
-<h2 id="release-notes">Release Notes</h2>
-
-<h3 id="rspec-core-2990rc1">rspec-core 2.99...</h3>
-  <hr>
-  <h3>
-    <a href="/blog/2014/02/rspec-2-99-and-3-0-beta-2-have-been-released/">RSpec 2.99 and 3.0 beta2 have been released!</a> -- Myron Marston
-    <small>Feb 21, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>The RSpec team has released 3.0.0.beta2 and 2.99.0.beta2.</p>
-
-<p>This is a huge release that includes tons of new features.
-I plan to do a full blog post listing and giving examples for
-all the notable new 3.0 features at a later date. For now, I've
-just got the full release notes.</p>
-
-<p>Thanks to all the contributors who helped make this release happen!</p>
-
-<p>I also want to thank those of you who have put your projects though
-the upgrade process and have been using 3.0.0.beta1–your feedback
-has been invaluable...</p>
-  <hr>
-  <h3>
-    <a href="/blog/2014/01/new-in-rspec-3-composable-matchers/">New in RSpec 3: Composable Matchers</a> -- Myron Marston
-    <small>Jan 14, 2014</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>One of RSpec 3's big new features is shipping 3.0.0.beta2: composable
-matchers. This feature supports more powerful, less brittle
-expectations, and opens up new possibilities.</p>
-
-<h2 id="an-example">An Example</h2>
-
-<p>In RSpec 2.x, I've written code like this on many occassions:</p>
-
-<pre><code class="highlight ruby"><span class="c1"># background_worker.rb</span>
-<span class="k">class</span> <span class="nc">BackgroundWorker</span>
-  <span class="kp">attr_reader</span> <span class="ss">:queue</span>
-
-  <span class="k">def</span> <span class="nf">initialize</span>
-    <span class="vi">@queue</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="k">end</span>
-
-  <span class="k">def</span> <span class="nf">enqueue</span><span class="p">(</span><span class="n">job_data</span><span class="p">)</span>
-    <span class="n">queue</span> <span class="o">&lt;&lt;</span> <span class="n">job_data</span><span class="p">.</span><span class="nf">merge</span><span class="p">(</span><span class="ss">:enqueued_at</span> <span class="o">=&gt;</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span><span class="p">)</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre>
-
-<pre><code class="highlight ruby"><span class="c1"># background_worker_spec.rb</span>
-<span class="n">describe</span> <span class="no">BackgroundWorker</span></code></pre>
-  <hr>
-  <h3>
-    <a href="/blog/2013/11/rspec-2-99-and-3-0-betas-have-been-released/">RSpec 2.99 and 3.0 betas have been released!</a> -- Myron Marston
-    <small>Nov  8, 2013</small>
-  </h3>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <p>The RSpec team has just released RSpec 3.0.0.beta1 – the first RSpec 3 pre-release!
-Along with that, we've released 2.99.0.beta1, which is intended to help with
-the upgrade process.</p>
-
-<p>I'd like to thank all the contributors, and especially the core team
-(<a href="https://twitter.com/alindeman">Andy</a>, <a href="https://twitter.com/soulcutter">Bradley</a>,
-<a href="https://twitter.com/JonRowe">Jon</a>, <a href="https://twitter.com/samphippen">Sam</a> and
-<a href="https://twitter.com/xshay">Xavier</a>) for making this release happen.</p>
-
-<p>I don't have the energy right now to write up a full "What's new in RSpec 3"
-blog post, but we've mostly been making changes according to what
-we <a href="/blog/2013/07/the-plan-for-rspec-3">previously announced for RSpec...</a></p>
-  <hr>
-
-    <p><a href="/blog/page/2/">Next page</a></p>
+    <h3><a href="/blog/2015/01/new-gem-signing-certificate/">New RSpec Gem signing certificate</a></h3>
+    <p>
+      Sam Phippen
+      <small>Jan 30, 2015</small>
+    </p>
+    <h3><a href="/blog/2015/01/new-rspec-website/">New RSpec Website!</a></h3>
+    <p>
+      Myron Marston
+      <small>Jan 29, 2015</small>
+    </p>
+    <h3><a href="/blog/2014/09/rspec-3-1-has-been-released/">RSpec 3.1 has been released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Sep  4, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/06/rspec-team-changes/">RSpec Team Changes</a></h3>
+    <p>
+      Myron Marston
+      <small>Jun 13, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/06/rspec-2-99-0-and-3-0-0-have-been-released/">RSpec 2.99.0 and 3.0.0 have been released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Jun  2, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/05/notable-changes-in-rspec-3/">Notable Changes in RSpec 3</a></h3>
+    <p>
+      Myron Marston
+      <small>May 21, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/05/rspec-2-99-and-3-0-rc-1-have-been-released/">RSpec 2.99 and 3.0 RC1 have been released!</a></h3>
+    <p>
+      Myron Marston
+      <small>May 18, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/02/rspec-2-99-and-3-0-beta-2-have-been-released/">RSpec 2.99 and 3.0 beta2 have been released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Feb 21, 2014</small>
+    </p>
+    <h3><a href="/blog/2014/01/new-in-rspec-3-composable-matchers/">New in RSpec 3: Composable Matchers</a></h3>
+    <p>
+      Myron Marston
+      <small>Jan 14, 2014</small>
+    </p>
+    <h3><a href="/blog/2013/11/rspec-2-99-and-3-0-betas-have-been-released/">RSpec 2.99 and 3.0 betas have been released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Nov  8, 2013</small>
+    </p>
+    <h3><a href="/blog/2013/07/the-plan-for-rspec-3/">The Plan for RSpec 3</a></h3>
+    <p>
+      Myron Marston
+      <small>Jul 15, 2013</small>
+    </p>
+    <h3><a href="/blog/2013/07/rspec-2-14-is-released/">RSpec 2.14 is released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Jul  8, 2013</small>
+    </p>
+    <h3><a href="/blog/2013/04/rspec-team-changes/">RSpec Team Changes</a></h3>
+    <p>
+      Myron Marston
+      <small>Apr  8, 2013</small>
+    </p>
+    <h3><a href="/blog/2013/02/rspec-2-13-is-released/">RSpec 2.13 is released!</a></h3>
+    <p>
+      Myron Marston
+      <small>Feb 23, 2013</small>
+    </p>
+    <h3><a href="/blog/2012/07/mixing-and-matching-parts-of-rspec/">Mixing and Matching Parts of RSpec</a></h3>
+    <p>
+      Myron Marston
+      <small>Jul 23, 2012</small>
+    </p>
+    <h3><a href="/blog/2012/06/constant-stubbing-in-rspec-2-11/">Constant Stubbing in RSpec 2.11</a></h3>
+    <p>
+      Myron Marston
+      <small>Jun 29, 2012</small>
+    </p>
+    <h3><a href="/blog/2012/06/rspecs-new-expectation-syntax/">RSpec's New Expectation Syntax</a></h3>
+    <p>
+      Myron Marston
+      <small>Jun 15, 2012</small>
+    </p>
+    <h3><a href="/blog/2011/11/recent-rspec-configuration-warnings-and-errors/">Recent RSpec Configuration Warnings and Errors</a></h3>
+    <p>
+      Myron Marston
+      <small>Nov  4, 2011</small>
+    </p>
+</section>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
